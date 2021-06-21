@@ -1,4 +1,4 @@
-# Storage Cleaner v1.0.0
+# Storage Cleaner v1.0.1
 
 ### What
 It's Fairly understandable from the name but yeah- it deletes unnecessary files and folders.
@@ -6,6 +6,7 @@ It's Fairly understandable from the name but yeah- it deletes unnecessary files 
 Deletes:
  - TEMP Files
  - Discord Cache
+ - Chrome Cache
 
 might add few more folders if I find them 🤷
 ### Why
