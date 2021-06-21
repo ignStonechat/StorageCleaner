@@ -13,7 +13,6 @@ public class Main {
 
     public static final File TEMP = new File(System.getProperty("user.home") + "\\AppData\\Local\\Temp");
     public static final File DISCORD_CACHE = new File(System.getProperty("user.home") + "\\AppData\\Roaming\\discord\\Cache");
-    public static final File GOOGLE_CACHE = new File(System.getProperty("user.home") + "\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Cache");
 
     public static int files_total = 0;
     public static int files_done = 0;
@@ -65,25 +64,6 @@ public class Main {
                     } else {
                         System.out.print(ANSI_GREEN + "CLEARING" + ANSI_RESET + " Completed!");
                         deleteFromFolder(DISCORD_CACHE);
-                    }
-                } catch (Exception e) {}
-                if (file.isDirectory()) {
-                    deleteFromFolder(file);
-                }
-            }
-        }
-
-        if (GOOGLE_CACHE.isDirectory()) {
-            files_total += GOOGLE_CACHE.listFiles().length;
-            for ( File file : GOOGLE_CACHE.listFiles()) {
-                file.delete();
-                files_done++;
-                try {
-                    if (!(files_total == files_done)) {
-                        System.out.print(ANSI_GREEN + "CLEARING" + ANSI_RESET + " " + (files_done / Float.parseFloat(files_total + ".0f")) * 100 + "%\r");
-                    } else {
-                        System.out.print(ANSI_GREEN + "CLEARING" + ANSI_RESET + " Completed!");
-                        deleteFromFolder(GOOGLE_CACHE);
                     }
                 } catch (Exception e) {}
                 if (file.isDirectory()) {
