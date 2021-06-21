@@ -1,4 +1,4 @@
-# Storage Cleaner v1.0.1
+# Storage Cleaner v1.0.2
 
 ### What
 It's Fairly understandable from the name but yeah- it deletes unnecessary files and folders.
