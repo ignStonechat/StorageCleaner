@@ -6,7 +6,7 @@ It's Fairly understandable from the name but yeah- it deletes unnecessary files 
 Deletes:
  - TEMP Files
  - Discord Cache
- - Chrome Cache
+ - Chrome Cache (Removed, it fucked up my browser)
 
 might add few more folders if I find them 🤷
 ### Why
